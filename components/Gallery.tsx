@@ -20,7 +20,7 @@ const PROJECTS: Project[] = [
     category: "Salas de Estar",
     categoryKey: "salas",
     materials: "Inspiração: forro de gesso, sanca com luz indireta e spots embutidos",
-    image: "/images/referencia-sala-gesso.png",
+    image: `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/images/referencia-sala-gesso.png`,
   },
   {
     id: 8,
@@ -28,7 +28,7 @@ const PROJECTS: Project[] = [
     category: "Dormitórios",
     categoryKey: "dormitorios",
     materials: "Inspiração: teto de drywall e cortineiro embutido com iluminação quente",
-    image: "/images/referencia-quarto-gesso.png",
+    image: `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/images/referencia-quarto-gesso.png`,
   },
   {
     id: 1,
@@ -36,7 +36,7 @@ const PROJECTS: Project[] = [
     category: "Salas de Estar",
     categoryKey: "salas",
     materials: "Drywall estruturado, fita de LED 3000K, spots dicroica",
-    image: "/images/referencia-hero-v2.png",
+    image: `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/images/referencia-hero-v2.png`,
   },
   {
     id: 2,
@@ -44,7 +44,7 @@ const PROJECTS: Project[] = [
     category: "Sancas & Iluminação",
     categoryKey: "sancas",
     materials: "Gesso acartonado, perfil de alumínio para fita LED, pintura laca branca",
-    image: "/images/referencia-sanca-v2.png",
+    image: `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/images/referencia-sanca-v2.png`,
   },
   {
     id: 3,
@@ -52,7 +52,7 @@ const PROJECTS: Project[] = [
     category: "Paredes 3D & Nichos",
     categoryKey: "paredes",
     materials: "Placas 3D em gesso diamante, rasgo de luz superior com LED",
-    image: "/images/referencia-parede-3d-v2.png",
+    image: `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/images/referencia-parede-3d-v2.png`,
   },
   {
     id: 4,
@@ -60,7 +60,7 @@ const PROJECTS: Project[] = [
     category: "Paredes 3D & Nichos",
     categoryKey: "paredes",
     materials: "Parede drywall com lã de vidro, nichos sob medida com LED",
-    image: "/images/referencia-nichos-v2.png",
+    image: `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/images/referencia-nichos-v2.png`,
   },
   {
     id: 5,
@@ -68,7 +68,7 @@ const PROJECTS: Project[] = [
     category: "Dormitórios",
     categoryKey: "dormitorios",
     materials: "Forro rebaixado com cortineiro de 15cm e fita LED indireta",
-    image: "/images/referencia-cortineiro-v2.png",
+    image: `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/images/referencia-cortineiro-v2.png`,
   },
   {
     id: 6,
@@ -76,7 +76,7 @@ const PROJECTS: Project[] = [
     category: "Comercial",
     categoryKey: "comercial",
     materials: "Forro drywall antichamas (RF), perfil de embutir LED contínuo",
-    image: "/images/referencia-comercial-v2.png",
+    image: `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/images/referencia-comercial-v2.png`,
   },
 ];
 

@@ -19,7 +19,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://gessoourobranco.com.br"),
+  metadataBase: new URL("https://rafael-amann.github.io/ouro-branco/"),
   title: "Gesso Ouro Branco | Gesso Convencional, Drywall e Sancas",
   description:
     "Gesso convencional e drywall para sua casa ou empresa. Forros rebaixados, sancas, molduras, cortineiros e divisórias com cuidado em cada acabamento.",
@@ -40,13 +40,13 @@ export const metadata: Metadata = {
     title: "Gesso Ouro Branco | Acabamentos de Alto Padrão em Gesso e Drywall",
     description:
       "Forros em gesso convencional e drywall, sancas, molduras e cortineiros. Converse com a equipe sobre seu projeto.",
-    url: "https://gessoourobranco.com.br",
+    url: "https://rafael-amann.github.io/ouro-branco/",
     siteName: "Gesso Ouro Branco",
     locale: "pt_BR",
     type: "website",
     images: [
       {
-        url: "/images/hero.jpg",
+        url: "https://rafael-amann.github.io/ouro-branco/images/referencia-hero-v2.png",
         width: 1200,
         height: 630,
         alt: "Ambiente moderno com forro de gesso e sanca iluminada - Gesso Ouro Branco",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     ],
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/favicon.ico`,
   },
 };
 

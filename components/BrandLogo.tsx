@@ -12,7 +12,7 @@ export default function BrandLogo({ className = "", preload = false, dark = fals
         </defs>
       </svg>
       <Image
-        src="/images/logo-ouro-branco-integrada.png"
+        src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/images/logo-ouro-branco-integrada.png`}
         alt="Gesso Ouro Branco"
         width={1519}
         height={1035}

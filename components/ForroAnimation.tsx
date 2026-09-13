@@ -71,12 +71,12 @@ export default function ForroAnimation() {
         <p className="mt-2 text-sm text-[#c6c1b6]">{reduced ? "Use a barra para acompanhar a montagem do forro." : "Desça para acompanhar a montagem. Suba para rever cada detalhe."}</p>
       </div>
       <div className="overflow-hidden rounded-2xl border border-[#bd9650]/40 bg-[#202223] shadow-[0_24px_70px_rgba(0,0,0,0.45),0_0_40px_rgba(195,141,43,0.08)]">
-        <video ref={video} src="/videos/forro-acabamento-final.mp4" poster="/images/forro-acabamento-final.png" muted playsInline preload="auto" onLoadedMetadata={seek} onLoadedData={seek} onSeeked={seek} onError={() => setFailed(true)} aria-label="Animação do forro de gesso convencional: montagem, rejunte, secagem e molduras" className="block max-h-[60svh] w-full object-contain" />
+        <video ref={video} src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/videos/forro-acabamento-final.mp4`} poster={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/images/forro-acabamento-final.png`} muted playsInline preload="auto" onLoadedMetadata={seek} onLoadedData={seek} onSeeked={seek} onError={() => setFailed(true)} aria-label="Animação do forro de gesso convencional: montagem, rejunte, secagem e molduras" className="block max-h-[60svh] w-full object-contain" />
         <div className="flex items-center gap-4 border-t border-[#bd9650]/20 bg-[#1b1d1e] px-5 py-4">
           <label htmlFor="forro-progress" className="shrink-0 text-sm text-amber-100">Montagem do forro</label>
           <input id="forro-progress" type="range" min="0" max="100" step="0.5" value={progress * 100} onChange={event => moveTo(Number(event.target.value) / 100)} className="min-w-0 flex-1 accent-[#c38d2b]" />
         </div>
-        {failed && <p className="px-5 pb-4 text-sm text-white">Não foi possível carregar a animação. <a href="/videos/forro-acabamento-final.mp4" className="underline">Abrir vídeo</a></p>}
+        {failed && <p className="px-5 pb-4 text-sm text-white">Não foi possível carregar a animação. <a href={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/videos/forro-acabamento-final.mp4`} className="underline">Abrir vídeo</a></p>}
       </div>
     </div>
   </section>;

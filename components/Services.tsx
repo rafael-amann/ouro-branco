@@ -17,7 +17,7 @@ const SERVICES_LIST: ServiceItem[] = [
     title: "Sancas, Molduras & Iluminação",
     badge: "Mais Pedido",
     desc: "Sancas e molduras em gesso convencional para valorizar o encontro entre teto e paredes. Opções com iluminação indireta e rasgos de luz, em gesso ou drywall conforme o projeto.",
-    image: "/images/referencia-sanca-v2.png",
+    image: `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/images/referencia-sanca-v2.png`,
     benefits: [
       "Iluminação cênica indireta que valoriza o ambiente",
       "Perfeita para salas de estar, jantar e suítes",
@@ -31,7 +31,7 @@ const SERVICES_LIST: ServiceItem[] = [
     title: "Forros em Gesso Convencional & Drywall",
     badge: "Alto Padrão",
     desc: "Forros em gesso convencional ou drywall para salas, quartos e espaços comerciais. Avaliamos o ambiente e o projeto para orientar a escolha do sistema.",
-    image: "/images/referencia-hero-v2.png",
+    image: `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/images/referencia-hero-v2.png`,
     benefits: [
       "Gesso convencional para forros e rebaixamentos",
       "Drywall para forros conforme o projeto",
@@ -45,7 +45,7 @@ const SERVICES_LIST: ServiceItem[] = [
     title: "Divisórias & Paredes Acústicas em Drywall",
     badge: "Rapidez & Limpeza",
     desc: "Criação de novos cômodos, closets, escritórios e salas de reuniões com estrutura de aço galvanizado e enchimento em lã mineral.",
-    image: "/images/referencia-nichos-v2.png",
+    image: `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/images/referencia-nichos-v2.png`,
     benefits: [
       "Até 4x mais rápido que alvenaria tradicional",
       "Excelente atenuação acústica e isolamento térmico",
@@ -59,7 +59,7 @@ const SERVICES_LIST: ServiceItem[] = [
     title: "Painéis e Revestimentos 3D em Gesso",
     badge: "Efeito Uau",
     desc: "Placas com desenhos volumétricos e geométricos modernos que transformam qualquer parede em uma obra de arte com luz e sombra.",
-    image: "/images/referencia-parede-3d-v2.png",
+    image: `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/images/referencia-parede-3d-v2.png`,
     benefits: [
       "Destaque espetacular para painéis de TV e recepções",
       "Variedade de modelos (diamante, pétalas, mosaico)",
@@ -73,7 +73,7 @@ const SERVICES_LIST: ServiceItem[] = [
     title: "Cortineiros Iluminados & Nichos Embutidos",
     badge: "Design de Interiores",
     desc: "Cortineiros em gesso convencional ou drywall para esconder os trilhos e valorizar as cortinas, com opção de iluminação. Nichos sob medida para complementar o ambiente.",
-    image: "/images/referencia-cortineiro-v2.png",
+    image: `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/images/referencia-cortineiro-v2.png`,
     benefits: [
       "Efeito cascata de luz suave sobre o tecido",
       "Nichos de apoio sem ocupar espaço de circulação",
@@ -87,7 +87,7 @@ const SERVICES_LIST: ServiceItem[] = [
     title: "Soluções Comerciais e Corporativas",
     badge: "Empresarial",
     desc: "Forros acústicos, sancas lineares e divisórias com placas resistentes ao fogo (RF) para escritórios, clínicas, consultórios e lojas.",
-    image: "/images/referencia-comercial-v2.png",
+    image: `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/images/referencia-comercial-v2.png`,
     benefits: [
       "Conformidade total com normas dos Bombeiros (AVCB)",
       "Atendimento a horários especiais noturnos/fins de semana",
