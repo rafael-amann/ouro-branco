@@ -1,0 +1,23 @@
+.viewport { width:100%; height:100%; position:relative; perspective:1300px; overflow:hidden; }
+.halo { position:absolute; inset:8% 0; background:radial-gradient(ellipse,#d8b56e35,transparent 65%); opacity:calc(.4 + var(--light) * .6); }
+.scene { position:absolute; width:260px; height:220px; left:50%; top:68%; margin-left:-130px; margin-top:-110px; transform-style:preserve-3d; transform:rotateX(58deg) rotateZ(calc(-38deg + var(--progress) * 12deg)); scale:1.3; }
+.scene * { position:absolute; box-sizing:border-box; transform-style:preserve-3d; }
+.floor { inset:-7px; background:repeating-linear-gradient(90deg,#9b8c76 0 32px,#8e806b 33px 34px); box-shadow:0 0 0 5px #c7bdab,12px 20px 35px #0008; }
+.backWall { width:260px; height:115px; top:0; left:0; transform-origin:top; transform:rotateX(90deg); background:linear-gradient(#e0dacd,#b6aea0); border-top:4px solid #ece5d8; }
+.sideWall { width:115px; height:220px; left:0; top:0; transform-origin:left; transform:rotateY(-90deg); background:linear-gradient(90deg,#cac1b0,#99917f); border-left:4px solid #ece5d8; }
+.window { width:100px; height:60px; left:80px; top:0; transform-origin:top; transform:translateZ(90px) rotateX(-90deg); background:linear-gradient(125deg,#9caeae,#d6e0d8); border:5px solid #4a4b45; box-shadow:inset 43px 0 #ffffff15; }
+.rug { width:170px; height:125px; left:52px; top:65px; transform:translateZ(1px); background:#e1d5be; border:6px solid #c8b99e; }
+.sofa { width:145px; height:45px; left:65px; top:25px; transform:translateZ(20px); background:linear-gradient(90deg,#b1a995 32%,#938b78 33%,#b1a995 34% 65%,#938b78 66%,#b1a995 67%); border:7px solid #c3baa4; border-radius:5px; box-shadow:0 10px 0 #797362,0 17px 10px #0004; }
+.table { width:60px; height:48px; top:110px; left:115px; transform:translateZ(13px); border-radius:50%; background:#6b5942; border:2px solid #a58a61; box-shadow:0 8px 0 #4b4032,0 13px 12px #0005; }
+.ceiling { inset:0; transform:translateZ(126px); }
+.rail { top:0; height:100%; width:5px; background:linear-gradient(90deg,#647179,#d4dde1,#76838a); box-shadow:2px 2px 0 #465158; }
+.crossRail { left:0; width:100%; height:5px; background:linear-gradient(#dbe0e2,#708089); transform:translateZ(3px); }
+.rail,.crossRail { opacity:calc(.2 + var(--structure) * .8); translate:0 calc((1 - var(--structure)) * -35px); }
+.panel { width:31%; height:45%; background:linear-gradient(135deg,#faf8ee,#d5d2c7); border:1px solid #fff8; box-shadow:2px 3px 0 #a8a497; opacity:calc(.15 + var(--panel) * .85); transform:translate3d(calc((1 - var(--panel)) * (var(--piece) - 2.5) * 13px),calc((1 - var(--panel)) * 25px),calc(7px + (1 - var(--panel)) * 80px)); }
+.finish { inset:3%; background:linear-gradient(135deg,#fffdf6,#dedbcf); transform:translateZ(9px); opacity:var(--finish); }
+.trim { inset:0; border:12px solid #eae6da; transform:translateZ(calc(13px + (1 - var(--finish)) * 30px)); box-shadow:3px 4px 0 #a49e90; opacity:var(--finish); }
+.led { inset:13px; border:2px solid #ffe5a4; transform:translateZ(14px); opacity:var(--light); box-shadow:0 0 12px #ffd580,inset 0 0 14px #ffc96e; }
+.spot { width:9px; height:9px; border-radius:50%; background:#fff6d7; transform:translateZ(15px); opacity:var(--light); box-shadow:0 0 15px 5px #ffd37b99; }
+@media(min-width:1000px) and (min-height:800px) { .scene { scale:1.6; } }
+@media(max-width:600px) { .scene { scale:.92; } }
+@media(max-height:700px) { .scene { scale:.75; } }
