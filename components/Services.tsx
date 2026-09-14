@@ -107,7 +107,7 @@ export default function Services() {
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-50 border border-amber-300 text-amber-800 text-xs font-bold uppercase tracking-wider shadow-sm">
             <Sparkles className="w-3.5 h-3.5 text-amber-600" />
-            Portfólio de Especialidades
+            Inspirações de Acabamentos
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-stone-900 tracking-tight">
             Nossos Serviços de <span className="text-gold-gradient">Gesso & Drywall</span>
@@ -115,6 +115,7 @@ export default function Services() {
           <p className="text-stone-600 text-base sm:text-lg">
             Do gesso convencional ao drywall: forros, sancas, molduras e soluções sob medida para ambientes residenciais e comerciais.
           </p>
+          <p className="text-sm text-stone-600">Imagens ilustrativas para inspirar seu projeto.</p>
         </div>
 
         {/* Services Grid */}
